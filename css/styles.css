@@ -12980,3 +12980,7 @@ embed {
     margin-right: 1em;
   }
 }
+.ngk {
+  border: 3px solid #9973B2;
+  border-radius: 2px;
+}
