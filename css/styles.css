@@ -98,7 +98,6 @@
 }
 
 body {
-  margin: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
@@ -107,7 +106,20 @@ body {
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body,
+textarea,
+fieldset,
+.dropdown-menu,
+.modal-fullscreen,
+.modal-fullscreen-sm-down,
+.modal-fullscreen-md-down,
+.modal-fullscreen-lg-down,
+.modal-fullscreen-xl-down,
+.modal-fullscreen-xxl-down {
+  margin: 0;
 }
 
 hr {
@@ -366,6 +378,7 @@ caption {
 th {
 
   text-align: -webkit-match-parent;
+  text-align: match-parent;
   text-align: inherit;
 }
 
@@ -397,7 +410,6 @@ button,
 select,
 optgroup,
 textarea {
-  margin: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -450,7 +462,6 @@ textarea {
 fieldset {
   min-width: 0;
   padding: 0;
-  margin: 0;
   border: 0;
 }
 
@@ -3722,7 +3733,6 @@ fieldset:disabled .btn {
   display: none;
   min-width: var(--bs-dropdown-min-width);
   padding: var(--bs-dropdown-padding-y) var(--bs-dropdown-padding-x);
-  margin: 0;
   font-size: var(--bs-dropdown-font-size);
   color: var(--bs-dropdown-color);
   text-align: left;
@@ -6181,7 +6191,6 @@ fieldset:disabled .btn {
   width: 100vw;
   max-width: none;
   height: 100%;
-  margin: 0;
 }
 
 .modal-fullscreen .modal-content {
@@ -6204,7 +6213,6 @@ fieldset:disabled .btn {
     width: 100vw;
     max-width: none;
     height: 100%;
-    margin: 0;
   }
 
   .modal-fullscreen-sm-down .modal-content {
@@ -6228,7 +6236,6 @@ fieldset:disabled .btn {
     width: 100vw;
     max-width: none;
     height: 100%;
-    margin: 0;
   }
 
   .modal-fullscreen-md-down .modal-content {
@@ -6252,7 +6259,6 @@ fieldset:disabled .btn {
     width: 100vw;
     max-width: none;
     height: 100%;
-    margin: 0;
   }
 
   .modal-fullscreen-lg-down .modal-content {
@@ -6276,7 +6282,7 @@ fieldset:disabled .btn {
     width: 100vw;
     max-width: none;
     height: 100%;
-    margin: 0;
+    /* margin: 0; */
   }
 
   .modal-fullscreen-xl-down .modal-content {
@@ -6300,7 +6306,7 @@ fieldset:disabled .btn {
     width: 100vw;
     max-width: none;
     height: 100%;
-    margin: 0;
+    /* margin: 0; */
   }
 
   .modal-fullscreen-xxl-down .modal-content {
